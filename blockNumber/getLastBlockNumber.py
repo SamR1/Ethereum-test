@@ -7,4 +7,4 @@ headers = {'Content-Type': 'application/json',}
 data = '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 result = requests.post(host, headers=headers, data=data)
 
-parsed_json = json.loads(result.text)
+print(int(parsed_json['result'], 0))
