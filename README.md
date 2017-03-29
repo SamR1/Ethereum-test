@@ -1,2 +1,2 @@
 # Ethereum-test
-somes scripts to test Ethereum
+some scripts to test Ethereum (tested on local blockchain)
