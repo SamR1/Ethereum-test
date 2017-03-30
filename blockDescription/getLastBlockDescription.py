@@ -18,7 +18,6 @@ data = '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["' + blockNum
 result = requests.post(host, headers=headers, data=data)
 parsed_json = json.loads(result.text)
 
-miner = parsed_json['result']['miner']
 print('Block Description (n° ' + bNumber + ') :')
 print('   - difficulty = ' + str(parsed_json['result']['difficulty']))
 print('   - extraData = ' + str(parsed_json['result']['extraData']))
